@@ -17,3 +17,4 @@ npm run build
 
 
 官方Demo地址： http://open.tsingsee.com/sdk/easyplayer/#player
+官方git地址：https://github.com/tsingsee/EasyPlayer.js
