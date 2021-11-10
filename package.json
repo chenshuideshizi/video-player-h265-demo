@@ -54,9 +54,10 @@
   },
   "dependencies": {
     "@easydarwin/easyplayer": "^3.3.10",
-    "md5": "^2.2.1",
+    "@easydarwin/easywasmplayer": "^4.0.13",
     "axios": "^0.24.0",
     "element-ui": "^2.15.6",
+    "md5": "^2.2.1",
     "nprogress": "^0.2.0",
     "three": "^0.134.0",
     "v-viewer": "^1.5.1",
