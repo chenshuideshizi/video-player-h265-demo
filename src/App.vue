@@ -1,18 +1,22 @@
 <template>
   <div id="app">
-    <!-- <EasyPlayerBox /> -->
-    <EasyWasmPlayerBox />
+    <div>
+        <router-link :to="{name: 'Home'}">
+            <el-link>首页</el-link>
+        </router-link>
+        <router-link :to="{name: 'Tsingsee'}">
+            <el-link>EasyPlayer</el-link>
+        </router-link>
+        <router-link :to="{name: 'JsmpegPlayer'}">
+            <el-link>JsmpegPlayer</el-link>
+        </router-link>
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import EasyPlayerBox from './components/EasyPlayerBox'
-  import EasyWasmPlayerBox from './components/EasyWasmPlayerBox'
   export default {
-    components: {
-      EasyPlayerBox,
-      EasyWasmPlayerBox
-    },
     data() {
       return {
       }

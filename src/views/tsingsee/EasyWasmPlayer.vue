@@ -1,6 +1,8 @@
 <template>
     <div id="box">
+        <h1>h265测试视频</h1>
         <div id="Player"></div>
+        <p>测试中...</p>
     </div>
 </template>
 
@@ -12,8 +14,9 @@ export default {
     data() {
         return {
             player: '',
+            url: ''
             // url: 'http://127.0.0.1:10080/fvod/PnCsnxdMg/video.m3u8'
-            url: 'ws://192.168.237.189:28000'
+            // url: 'http://192.168.232.31:8000/stream_camera.flv'
             // url: 'https://mister-ben.github.io/videojs-flvjs/bbb.flv'
         }
     },
@@ -31,7 +34,7 @@ export default {
         },
         initWs() {
             // Create WebSocket connection.
-            const socket = new WebSocket('ws://192.168.237.189:28000');
+            const socket = new WebSocket(this.url);
             
 
             // Connection opened
